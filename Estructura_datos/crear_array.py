@@ -9,3 +9,6 @@ class Array:
     
     def __str__(self):
         return str(self.items)
+    
+    def __iter__ (self):
+        return iter(self.items)
