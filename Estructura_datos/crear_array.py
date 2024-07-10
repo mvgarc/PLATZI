@@ -3,3 +3,9 @@ class Array:
         self.items = list()
         for i in range(capacity):
             self.items.append(fill_value)
+
+    def __len__ (self):
+        return len(self.items)
+    
+    def __str__(self):
+        return str(self.items)
