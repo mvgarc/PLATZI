@@ -19,6 +19,6 @@ array.populate(metodo="random")
 print("Array que contiene los números aleatorios:", array.elements)
 print("Suma de los elementos del array:", array.sum_elements())
 
-array.populate(metodo="sequential", star=1, step=1)
+array.populate(metodo="sequential", start=1, step=1)
 print("Array que contiene los números secuenciales:", array.elements)
 print("Suma de los elementos del array:", array.sum_elements())
