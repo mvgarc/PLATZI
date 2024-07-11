@@ -1,7 +1,8 @@
 from crear_array import Array
+import random
 
 class Grid():
-    def __init__(self, rows, columns, fill_value=3):
+    def __init__(self, rows, columns, fill_value=random.randint(0,9)):
         self.data = Array(rows)
         for row in range (rows):
             self.data[row]= Array(columns, fill_value)
