@@ -1,7 +1,7 @@
 from crear_array import Array
 
 class Grid():
-    def __init__(self, rows, columns, fill_value=None):
+    def __init__(self, rows, columns, fill_value=3):
         self.data = Array(rows)
         for row in range (rows):
             self.data[row]= Array(columns, fill_value)
@@ -19,7 +19,10 @@ class Grid():
         
         for row in range (self.get_height()):
             for col in range(self.get_width()):
-                result += str(self.data[row][col])
+                result += str(self.data[row][col]) + " "
 
             result += "\n"
         return str(result)
+    
+matrix = Grid(3,3)
+print (matrix)
