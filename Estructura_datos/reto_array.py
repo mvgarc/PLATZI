@@ -1,7 +1,7 @@
 import random
 class Array:
     def __init__(self, size):
-        self.size: size
+        self.size = size
         self.elements= []
 
     def populate(self, metodo="random", start=0, step=1):
