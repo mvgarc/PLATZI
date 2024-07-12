@@ -56,4 +56,14 @@ class SinglyLinkedList:
         self.tail = None
         self.head = None
         self.size = 0
-        
+
+words = SinglyLinkedList()
+words.append ("manzana")
+words.append ("pera")
+words.append ("durazno")
+words.append ("guayaba")
+current = words.tail
+
+while current:
+    print (current.data)
+    current = current.next
