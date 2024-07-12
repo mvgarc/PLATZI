@@ -22,3 +22,12 @@ class ListaEnlazada:
         actual = self.head
         while actual is not None:
             print (actual.value, end="->")
+            actual = actual.next
+        print ("None")
+
+array = [1,4,7,8,12]
+
+list_enlazada= ListaEnlazada()
+for value in array:
+    list_enlazada.agregar(value)
+list_enlazada.print_list()
