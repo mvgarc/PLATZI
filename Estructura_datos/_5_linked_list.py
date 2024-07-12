@@ -10,3 +10,10 @@ class SinglyLinkedList:
 
         if self.tail == None:
             self.tail = node
+        else:
+            current = self.tail
+
+            while current.next:
+                current=current.next
+            
+            current.next = node
