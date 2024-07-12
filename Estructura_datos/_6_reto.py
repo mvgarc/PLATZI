@@ -17,3 +17,8 @@ class ListaEnlazada:
             while actual.next is not None:
                 actual = actual.next
             actual.next = new_nodo
+    
+    def print_list(self):
+        actual = self.head
+        while actual is not None:
+            print (actual.value, end="->")
