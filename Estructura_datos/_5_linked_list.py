@@ -51,3 +51,9 @@ class SinglyLinkedList:
         for nodo in self.iter():
             if data == nodo:
                 print(f"Data{data} found!")
+
+    def clear(self):
+        self.tail = None
+        self.head = None
+        self.size = 0
+        
