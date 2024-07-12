@@ -17,5 +17,20 @@ class SinglyLinkedList:
                 current=current.next
             
             current.next = node
-            
+
         self.size+=1
+
+    def size(self):
+        return str(self.size)
+    
+    def iter(self):
+        current= self.tail
+
+        while current:
+            value= current.data
+            current = current.next
+            yield value
+
+    def delete(self, data):
+        current = self.tail
+        previous = self.tail
