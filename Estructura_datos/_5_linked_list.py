@@ -60,6 +60,7 @@ class SinglyLinkedList:
         self.head = None
         self.size = 0
 
+"""
 words = SinglyLinkedList()
 words.append ("manzana")
 words.append ("pera")
@@ -72,4 +73,4 @@ while current:
     current = current.next
 
 #Buscar una palabra
-words.search ("miel")
+words.search ("miel")"""
