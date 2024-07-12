@@ -46,3 +46,8 @@ class SinglyLinkedList:
             
         previous = current
         current = current.next
+
+    def search(self, data):
+        for nodo in self.iter():
+            if data == nodo:
+                print(f"Data{data} found!")
