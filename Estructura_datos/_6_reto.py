@@ -11,3 +11,9 @@ class ListaEnlazada:
         new_nodo = Nodo(value)
         if self.head is None:
             self.head = new_nodo
+
+        else:
+            actual = self.head
+            while actual.next is not None:
+                actual = actual.next
+            actual.next = new_nodo
