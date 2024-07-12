@@ -39,30 +39,26 @@ else:
     print(f"The target item {target_item} is not in the linked list")
 
 
-# Insert new element at the beginning
-head = Node("F", head)
+head = Nodo("F", head)
 
 
-# Insert at the end
-new_node = Node("K")
+new_nodo = Nodo("K")
 
 if head is None:
-    head = new_node
+    head = new_nodo
 else:
     probe = head
     while probe.next != None:
         probe = probe.next
 
-    probe.next = new_node
+    probe.next = new_nodo
 
 
-# Remove at the beginning
 removed_item = head.data
 head = head.next
 print(removed_item)
 
 
-# Remove at the end
 removed_item = head.data
 
 if head.next is None:
@@ -79,23 +75,19 @@ else:
 print(removed_item)
 
 
-# Insert at any position
 new_item = input("Enter the new item: ")
 index = int(input("Enter the position to inser the new item: "))
 if head is None or index < 0:
-    head = Node("Py", head)
+    head = Nodo("Py", head)
 else:
-    # Search for node at position index - 1 or the last position
     probe = head
 
     while index > 1 and probe.next != None:
         probe = probe.next
         index -= 1
 
-    probe.next = Node(new_item, probe.next)
+    probe.next = Nodo(new_item, probe.next)
 
-
-# Remove at any position
 index = 3
 
 if index <= 0 or head.next is None:
@@ -103,8 +95,6 @@ if index <= 0 or head.next is None:
     head = head.next
     print(removed_item)
 else:
-    # Search for nod at position index - 1
-    # or the next to last position
     probe = head
 
     while index > 1 and probe.next.next != None:
