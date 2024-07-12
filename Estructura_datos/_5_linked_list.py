@@ -51,6 +51,9 @@ class SinglyLinkedList:
         for nodo in self.iter():
             if data == nodo:
                 print(f"Data {data} found!")
+            else:
+                print(f"Data {data} not found!")
+                break
 
     def clear(self):
         self.tail = None
@@ -69,4 +72,4 @@ while current:
     current = current.next
 
 #Buscar una palabra
-words.search ("durazno")
+words.search ("miel")
