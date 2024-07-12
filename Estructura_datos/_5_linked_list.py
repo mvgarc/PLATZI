@@ -17,3 +17,5 @@ class SinglyLinkedList:
                 current=current.next
             
             current.next = node
+            
+        self.size+=1
