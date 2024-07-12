@@ -34,3 +34,15 @@ class SinglyLinkedList:
     def delete(self, data):
         current = self.tail
         previous = self.tail
+
+        while current:
+            if current.data == data:
+                if current == self.tail:
+                    self.tail = current.next
+            else:
+                previous.next = current.next
+                self.size -=1
+                return current.data
+            
+        previous = current
+        current = current.next
